@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, paper scissors</title>
+    <meta
+      property="og:image"
+      content="https://jonkemm.github.io/rock-off/src/img/screenshot.png"
+    />
+    <meta property="og:title" content="Rock off - Rock, paper, scissers" />
+    <meta
+      property="og:description"
+      content="Play rock, paper, scissors with this splendid little web app. Please give me some constructive feedback?"
+    />
+    <link rel="stylesheet" href="./src/style/style.css" />
+    <script src="./src/js/list.js" defer></script>
+    <script src="./src/js/app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="message">Rock, Paper or Scissors?</div>
+      <ul class="listOfImages">
+        <li>
+          <img id="pic1" src="./src/img/pic1.svg" alt="" class="choices" />
+        </li>
+        <li>
+          <img id="pic2" src="./src/img/pic2.svg" alt="" class="choices" />
+        </li>
+        <li>
+          <img id="pic3" src="./src/img/pic3.svg" alt="" class="choices" />
+        </li>
+      </ul>
+      <div class="contenders">
+        <img src="./src/img/player.svg" class="player" alt="" id="usPlayer" />
+        <img src="./src/img/blank.svg" class="player" id="usChoice" />
+        <img src="./src/img/them.svg" class="player" alt="" id="themPlayer" />
+        <img src="./src/img/blank.svg" class="player" id="themChoice" />
+      </div>
+      <div id="scoreboard">
+        <span id="us">Us</span>
+        <span id="round">Round</span>
+        <span id="them">Them</span>
+      </div>
+    </div>
+  </body>
+</html>

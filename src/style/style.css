@@ -1,0 +1,121 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 35px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+/* from the top down */
+.container {
+  display: grid;
+  max-width: 600px;
+  min-width: 6em;
+  margin: auto;
+  padding: 0.1em;
+  border: solid;
+  border-radius: 0.5em;
+  background-color: #ffccef;
+}
+
+/* first row ---------------------------------------------- */
+#message {
+  display: block;
+  height: 1em;
+  border: solid #663399;
+  border-radius: 0.5em;
+  padding: 0.3em 0.1em;
+  /* background-image: linear-gradient(hsl(320, 100%, 90%), hsl(320, 100%, 70%)); */
+}
+
+/* 2nd row ---------------------------------------------- */
+.choices {
+  cursor: pointer;
+}
+
+/*  3rd row ---------------------------------------------- */
+.choices,
+.contenders .player {
+  width: 3em;
+  height: 3em;
+}
+
+.player {
+  border: none;
+}
+
+#usPlayer {
+  background-color: #ffbb99;
+}
+
+#usChoice {
+  background-color: #ffddcc;
+}
+
+#themPlayer {
+  background-color: #99bbff;
+}
+
+#themChoice {
+  background-color: #ccddff;
+}
+
+.contenders div,
+.contenders img {
+  border: solid;
+  border-radius: 50%;
+}
+
+.listOfImages,
+.contenders {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+}
+
+ul.listOfImages {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.pics {
+  width: 3em;
+  opacity: 0;
+  position: absolute;
+  animation-fill-mode: forwards;
+}
+
+/* 4th row ---------------------------------------------- */
+#scoreboard,
+#message {
+  display: flex;
+  justify-content: space-around;
+  margin: 0.3em;
+}
+
+#us,
+#them,
+#round {
+  text-align: center;
+  width: 30%;
+  border: solid #663399;
+  border-radius: 0.5em;
+  padding: 0.3em 0.1em;
+  font-size: 0.5em;
+}
+
+.contendersFlash {
+  background-image: linear-gradient(#bafa0a, #9eff66);
+}
+
+#scoreboard span,
+#message {
+  background-color: #efefef;
+}
